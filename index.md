@@ -16,9 +16,10 @@ A Quarteada é um encontro anual de compositores, intérpretes e amigos da tradi
 - [Brandbook](02-Brandbook) — Manifesto, posicionamento, tom de voz, paleta, tipografia e pilares de conteúdo.
 - [Sugestões de Handle para o Instagram](03-Sugestoes-Instagram) — Lista priorizada de @ com critérios e recomendação de cenários.
 
-## Pauta de Reunião
+## Documentos para a Reunião de 28/05/2026
 
-- [Documento PDF para Reunião de 28/05/2026](OsQuarteadores_ReuniaoDigital.pdf) — Resumo executivo da presença digital para apresentação do Sr. Heraclides Kaempf.
+- [Brandbook (PDF)](OsQuarteadores_Brandbook.pdf) — Essência, manifesto, posicionamento, personalidade, tom de voz e identidade visual.
+- [Pauta de Reunião (PDF)](OsQuarteadores_ReuniaoDigital.pdf) — Resumo executivo da presença digital para apresentação do Sr. Heraclides do Nascimento.
 
 ---
 

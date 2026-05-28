@@ -48,7 +48,7 @@ Esse é o coração da marca.
 
 Como pessoa, Os Quarteadores seria:
 
-- Homem ou mulher de campo, gente que sabe escutar.
+- Homem de campo, gente que sabe escutar.
 - Fala pouco, mas o que fala é certeiro.
 - Respeita quem veio antes, abre porteira pra quem vem depois.
 - Tem leitura. Cita Jayme Caetano Braun sem precisar mostrar que sabe.
