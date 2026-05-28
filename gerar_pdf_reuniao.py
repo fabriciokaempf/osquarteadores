@@ -65,8 +65,19 @@ def draw_page(c, w, h):
     c.setLineWidth(0.8)
     c.line(ML, y, w - MR, y)
 
+    # ---- Frase de proposito ----
+    y -= 0.75*cm
+    frase_proposito = (
+        "Quarteador não corre corrida. Quarteador puxa junto. "
+        "A presença digital do Grupo não veio disputar espaço com ninguém. "
+        "Veio fortalecer o que já é forte: a excelência do encontro, "
+        "as amizades que o tempo vai tornando querência, "
+        "e as canções que nascem quando a roda se fecha."
+    )
+    y = texto(c, frase_proposito, y, w, size=10, color=VERMELHO, italic=True)
+
     # ---- Secao: Contexto ----
-    y -= 1.0*cm
+    y -= 0.75*cm
     y = section_title(c, "O que está sendo feito", y, w)
     y -= 0.45*cm
 
@@ -168,12 +179,11 @@ def section_title(c, text, y, w):
     c.line(ML, y, w - MR, y)
     return y
 
-def texto(c, text, y, w, size=10.5):
+def texto(c, text, y, w, size=10.5, color=None, italic=False):
     from textwrap import wrap
-    c.setFillColor(CARBON)
-    c.setFont("Times-Roman", size)
+    c.setFillColor(color or CARBON)
+    c.setFont("Times-Italic" if italic else "Times-Roman", size)
     max_w = w - ML - MR
-    # approx chars per line
     chars_per_line = int(max_w / (size * 0.48))
     linhas = wrap(text, chars_per_line)
     leading = size * 1.75
