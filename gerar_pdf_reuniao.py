@@ -51,8 +51,8 @@ def draw_page(c, w, h):
     y -= 0.5*cm
     c.setFillColor(CARBON)
     c.setFont("Times-Roman", 9)
-    c.drawString(ML, y, "Apresentado por: Fabricio Kaempf")
-    c.drawRightString(w - MR, y, "Para: Sr. Heraclides Kaempf, Presidente 2026")
+    c.drawString(ML, y, "Apresentado por: Fabricio")
+    c.drawRightString(w - MR, y, "Para: Sr. Heraclides do Nascimento, Presidente 2026")
 
     # Linha separadora
     y -= 0.4*cm
