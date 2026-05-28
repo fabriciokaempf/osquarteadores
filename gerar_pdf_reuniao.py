@@ -111,7 +111,7 @@ def draw_page(c, w, h):
     y = y - box_h - 0.6*cm
 
     # ---- Secao: Site oficial ----
-    y = section_title(c, "Projeto em andamento: site oficial do coletivo", y, w)
+    y = section_title(c, "Projeto a viabilizar: site oficial do coletivo", y, w)
     y -= 0.3*cm
 
     c.setFillColor(VERDE)
