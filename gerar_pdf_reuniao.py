@@ -66,9 +66,9 @@ def draw_page(c, w, h):
     c.line(ML, y, w - MR, y)
 
     # ---- Secao: Contexto ----
-    y -= 0.8*cm
+    y -= 1.0*cm
     y = section_title(c, "O que está sendo feito", y, w)
-    y -= 0.3*cm
+    y -= 0.45*cm
 
     texto_intro = (
         "Fabricio iniciou a construção da presença digital de Os Quarteadores. "
@@ -77,7 +77,7 @@ def draw_page(c, w, h):
     y = texto(c, texto_intro, y, w, size=10.5)
 
     # ---- 3 colunas de entregas ----
-    y -= 0.5*cm
+    y -= 0.7*cm
     box_h = 4.2*cm
     bw = (w - ML - MR - 0.4*cm) / 3
     boxes = [
@@ -102,23 +102,27 @@ def draw_page(c, w, h):
         # titulo da box
         c.setFillColor(VERMELHO)
         c.setFont("Times-Bold", 8.5)
-        c.drawString(bx + 0.25*cm, by + box_h - 0.6*cm, titulo_box)
+        c.drawString(bx + 0.3*cm, by + box_h - 0.55*cm, titulo_box)
+        # linha fina sob titulo da box
+        c.setStrokeColor(VERMELHO)
+        c.setLineWidth(0.3)
+        c.line(bx + 0.3*cm, by + box_h - 0.75*cm, bx + bw - 0.3*cm, by + box_h - 0.75*cm)
         # corpo da box
         c.setFillColor(CARBON)
         c.setFont("Times-Roman", 8)
-        wrap_box(c, corpo_box, bx + 0.25*cm, by + box_h - 0.85*cm, bw - 0.5*cm, 8.5)
+        wrap_box(c, corpo_box, bx + 0.3*cm, by + box_h - 1.05*cm, bw - 0.6*cm, 8.5)
 
-    y = y - box_h - 0.6*cm
+    y = y - box_h - 0.9*cm
 
     # ---- Secao: Site oficial ----
     y = section_title(c, "Projeto a viabilizar: site oficial do coletivo", y, w)
-    y -= 0.3*cm
+    y -= 0.45*cm
 
     c.setFillColor(VERDE)
     c.setFont("Times-Bold", 10)
     c.drawString(ML, y, "ENTREGA VOLUNTÁRIA  |  Valor de mercado estimado: R$ 1.600,00  |  Será entregue gratuitamente ao coletivo")
 
-    y -= 0.55*cm
+    y -= 0.65*cm
     texto_site = (
         "Fabricio desenvolverá o site oficial de Os Quarteadores como contribuição voluntária ao coletivo "
         "e à tradição da Quarteada. O site terá página de apresentação do coletivo e da Quarteada, "
@@ -127,15 +131,15 @@ def draw_page(c, w, h):
     )
     y = texto(c, texto_site, y, w, size=10.5)
 
-    y -= 0.15*cm
+    y -= 0.4*cm
     c.setFillColor(COURO)
     c.setFont("Times-Italic", 9.5)
     c.drawString(ML, y, "Custo único para o coletivo: registro do domínio próprio, estimado em até R$ 100,00 por dois anos de uso e posse.")
 
     # ---- Secao: Instagram ----
-    y -= 0.5*cm
+    y -= 0.8*cm
     y = section_title(c, "Instagram", y, w)
-    y -= 0.3*cm
+    y -= 0.45*cm
 
     texto_ig = (
         "Perfil atual: @osquarteadores. Está em avaliação a criação de um novo perfil com identidade "
@@ -158,7 +162,7 @@ def section_title(c, text, y, w):
     c.setFillColor(VERMELHO)
     c.setFont("Times-Bold", 11.5)
     c.drawString(ML, y, text.upper())
-    y -= 0.3*cm
+    y -= 0.4*cm
     c.setStrokeColor(VERMELHO)
     c.setLineWidth(0.4)
     c.line(ML, y, w - MR, y)
