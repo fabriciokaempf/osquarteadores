@@ -255,7 +255,7 @@ def pagina2(c, w, h):
     c.setFillColor(COURO)
     c.setFont("Times-Bold", 9)
     c.drawString(ML, y, "Paleta:")
-    y -= 0.35*cm
+    y -= 0.5*cm
 
     paleta = [
         (CARBON,   "Carbón",       "#1A1714", "Texto, fundos sólidos"),
@@ -278,13 +278,13 @@ def pagina2(c, w, h):
         c.drawString(bx, y - sh - 0.38*cm, nome)
         c.setFont("Times-Roman", 7)
         c.drawString(bx, y - sh - 0.7*cm, hex_val)
-    y -= sh + 1.1*cm
+    y -= sh + 1.9*cm
 
     # Tipografia
     c.setFillColor(COURO)
     c.setFont("Times-Bold", 9)
     c.drawString(ML, y, "Tipografia:")
-    y -= 0.35*cm
+    y -= 0.5*cm
     tipo_items = [
         "Display: serifa clássica com presença. Recomendado: Cormorant Garamond ou Source Serif Pro.",
         "Texto corrido: Lora ou Source Serif Pro.",
