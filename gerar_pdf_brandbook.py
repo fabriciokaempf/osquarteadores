@@ -51,10 +51,10 @@ def bullet(c, text, y, w, size=10):
     chars = int(usable / (size * 0.48))
     linhas = wrap(text, chars)
     leading = size * 1.7
-    for i, l in enumerate(linhas):
+    for l in linhas:
         c.drawString(ML + 0.5*cm, y, l)
         y -= leading
-    return y
+    return y - 0.25*cm
 
 def rodape(c, w):
     c.setStrokeColor(VERMELHO)
@@ -292,13 +292,13 @@ def pagina2(c, w, h):
     ]
     for item in tipo_items:
         y = bullet(c, item, y, w, size=9.5)
-    y -= 0.2*cm
+    y -= 0.45*cm
 
     # Simbolo
     c.setFillColor(COURO)
     c.setFont("Times-Bold", 9)
     c.drawString(ML, y, "Símbolo:")
-    y -= 0.35*cm
+    y -= 0.4*cm
     y = bloco_texto(c,
         "O V dos pássaros em formação: sete traços diagonais orgânicos formando o V. "
         "Funciona como assinatura, ícone e bordado em pala. "
@@ -307,6 +307,7 @@ def pagina2(c, w, h):
     y -= 0.2*cm
 
     # ---- 7. Nao fazer ----
+    y -= 0.3*cm
     y = titulo_secao(c, "7. O que não fazer", y, w)
     y -= 0.4*cm
     donts = [
