@@ -71,7 +71,7 @@ def draw_page(c, w, h):
     y -= 0.45*cm
 
     texto_intro = (
-        "Fabricio iniciou a construção da presença digital de Os Quarteadores. "
+        "Fabricio iniciou a construção da presença digital do Grupo Os Quarteadores. "
         "O trabalho está organizado em três entregas já concluídas e um projeto em andamento."
     )
     y = texto(c, texto_intro, y, w, size=10.5)
@@ -124,7 +124,7 @@ def draw_page(c, w, h):
 
     y -= 0.65*cm
     texto_site = (
-        "Fabricio desenvolverá o site oficial de Os Quarteadores como contribuição voluntária ao coletivo "
+        "Fabricio desenvolverá o site oficial do Grupo Os Quarteadores como contribuição voluntária ao coletivo "
         "e à tradição da Quarteada. O site terá página de apresentação do coletivo e da Quarteada, "
         "cancioneiro (catálogo de canções nascidas no encontro), histórico de edições, informações para "
         "participação e integração com redes sociais."
