@@ -54,6 +54,11 @@ def draw_page(c, w, h):
     c.drawString(ML, y, "Apresentado por: Fabricio")
     c.drawRightString(w - MR, y, "Para: Sr. Heraclides do Nascimento, Presidente 2026")
 
+    y -= 0.45*cm
+    c.setFillColor(COURO)
+    c.setFont("Times-Italic", 9)
+    c.drawString(ML, y, "Grupo Os Quarteadores")
+
     # Linha separadora
     y -= 0.4*cm
     c.setStrokeColor(VERMELHO)
@@ -66,7 +71,7 @@ def draw_page(c, w, h):
     y -= 0.3*cm
 
     texto_intro = (
-        "Fabricio Kaempf iniciou a construção da presença digital de Os Quarteadores. "
+        "Fabricio iniciou a construção da presença digital de Os Quarteadores. "
         "O trabalho está organizado em três entregas já concluídas e um projeto em andamento."
     )
     y = texto(c, texto_intro, y, w, size=10.5)
@@ -115,7 +120,7 @@ def draw_page(c, w, h):
 
     y -= 0.55*cm
     texto_site = (
-        "Fabricio Kaempf desenvolverá o site oficial de Os Quarteadores como contribuição voluntária ao coletivo "
+        "Fabricio desenvolverá o site oficial de Os Quarteadores como contribuição voluntária ao coletivo "
         "e à tradição da Quarteada. O site terá página de apresentação do coletivo e da Quarteada, "
         "cancioneiro (catálogo de canções nascidas no encontro), histórico de edições, informações para "
         "participação e integração com redes sociais."
@@ -162,7 +167,7 @@ def texto(c, text, y, w, size=10.5):
     # approx chars per line
     chars_per_line = int(max_w / (size * 0.48))
     linhas = wrap(text, chars_per_line)
-    leading = size * 1.45
+    leading = size * 1.75
     for linha in linhas:
         c.drawString(ML, y, linha)
         y -= leading
@@ -172,7 +177,7 @@ def wrap_box(c, text, x, y, bw, size=8):
     from textwrap import wrap
     chars = int(bw / (size * 0.48))
     linhas = wrap(text, chars)
-    leading = size * 1.4
+    leading = size * 1.7
     for linha in linhas:
         if y < 1*cm:
             break
