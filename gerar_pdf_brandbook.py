@@ -184,6 +184,36 @@ def pagina2(c, w, h):
 
     y = h - 2.3*cm
 
+    # ---- Bloco de pertencimento ----
+    box_h = 2.0*cm
+    bx = ML
+    bw = w - ML - MR
+    c.setFillColor(CARBON)
+    c.setStrokeColor(VERMELHO)
+    c.setLineWidth(0.8)
+    c.roundRect(bx, y - box_h, bw, box_h, 4, fill=1, stroke=1)
+
+    c.setFillColor(VERMELHO)
+    c.setFont("Times-Bold", 9.5)
+    c.drawString(bx + 0.4*cm, y - 0.48*cm, "PERTENCIMENTO")
+
+    c.setFillColor(BRANCO)
+    c.setFont("Times-Italic", 9)
+    frase_pert = (
+        "A porteira não está aberta para qualquer um. "
+        "Novos membros entram por convite e passam pelo crivo da diretoria e do grupo. "
+        "Quem entra, entra porque tem o perfil, o respeito e o propósito que o grupo exige."
+    )
+    usable = bw - 0.8*cm
+    chars = int(usable / (9 * 0.48))
+    linhas = wrap(frase_pert, chars)
+    ty = y - 0.85*cm
+    for l in linhas:
+        c.drawString(bx + 0.4*cm, ty, l)
+        ty -= 9 * 1.6
+
+    y = y - box_h - 0.8*cm
+
     # ---- 4. Personalidade ----
     y = titulo_secao(c, "4. Personalidade", y, w)
     y -= 0.4*cm

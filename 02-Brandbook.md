@@ -44,6 +44,8 @@ Esse é o coração da marca.
 **Frase âncora:** *Onde a canção nasce.*
 (alternativas: "A canção nasce na quarteada", "Puxando junto a canção nativa")
 
+**Pertencimento:** Fazer parte do Grupo Os Quarteadores não é aberto ao público geral. Novos membros entram por convite e passam pelo crivo da diretoria e do grupo. A porteira não está aberta para qualquer um: quem entra, entra porque tem o perfil, o respeito e o propósito que o grupo exige. Isso é parte do valor do encontro.
+
 ## 4. Personalidade
 
 Como pessoa, Os Quarteadores seria:
