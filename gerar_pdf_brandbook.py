@@ -264,23 +264,21 @@ def pagina2(c, w, h):
         (VERDE,    "Verde azevém", "#3F4E2E", "Suporte"),
         (COURO,    "Couro baio",   "#6E4B2F", "Texto secundário"),
     ]
-    sw = 1.0*cm
-    sh = 0.55*cm
+    sw = 1.2*cm
+    sh = 0.7*cm
     gap = (w - ML - MR - len(paleta) * sw) / (len(paleta) - 1)
     for i, (cor, nome, hex_val, uso) in enumerate(paleta):
         bx = ML + i * (sw + gap)
-        # swatch
         c.setFillColor(cor)
         c.setStrokeColor(COURO)
         c.setLineWidth(0.3)
         c.rect(bx, y - sh, sw, sh, fill=1, stroke=1)
-        # nome
         c.setFillColor(CARBON)
-        c.setFont("Times-Bold", 7)
-        c.drawString(bx, y - sh - 0.3*cm, nome)
-        c.setFont("Times-Roman", 6.5)
-        c.drawString(bx, y - sh - 0.55*cm, hex_val)
-    y -= sh + 0.8*cm
+        c.setFont("Times-Bold", 7.5)
+        c.drawString(bx, y - sh - 0.38*cm, nome)
+        c.setFont("Times-Roman", 7)
+        c.drawString(bx, y - sh - 0.7*cm, hex_val)
+    y -= sh + 1.1*cm
 
     # Tipografia
     c.setFillColor(COURO)
@@ -315,7 +313,6 @@ def pagina2(c, w, h):
         "Estampar bandeira do RS, chimarrão, bota ou esporas como ícones decorativos.",
         "Cair na estética de cartaz de rodeio: gradiente, letras de outline, ouro brilhante.",
         "Usar gauchês forçado, regionalismo pra inglês ver, adjetivos vazios.",
-        "Publicar só na semana do evento. A marca respira o ano todo.",
     ]
     for item in donts:
         y = bullet(c, item, y, w, size=9.5)
