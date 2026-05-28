@@ -127,6 +127,11 @@ def draw_page(c, w, h):
     )
     y = texto(c, texto_site, y, w, size=10.5)
 
+    y -= 0.15*cm
+    c.setFillColor(COURO)
+    c.setFont("Times-Italic", 9.5)
+    c.drawString(ML, y, "Custo único para o coletivo: registro do domínio próprio, estimado em até R$ 100,00 por dois anos de uso e posse.")
+
     # ---- Secao: Instagram ----
     y -= 0.5*cm
     y = section_title(c, "Instagram", y, w)
